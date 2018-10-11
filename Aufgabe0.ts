@@ -9,7 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 
 function Feldeingabe() {
     var Name : string  = prompt("Gib deinen Namen hier ein");
-    var node = document.getElementById("innerhtmlcontent");
+    var node : HTMLElement = document.getElementById("innerhtmlcontent");
     node.innerHTML += "Hey ";
     node.innerHTML += Name;
     node.innerHTML += " was geht?";
