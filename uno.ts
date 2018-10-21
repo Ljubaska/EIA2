@@ -6,7 +6,8 @@ Er wurde nicht kopiert und auch nicht diktiert.
 
 (In Zusammenarbeit mit Girrbach und Stark) */
 
-     /** create cards with interface (farben haben number als Datentyp) */
+     
+/** create cards with interface (farben haben number als Datentyp) */
     interface Karten {
         typ: string;
         colour: number[];
@@ -233,4 +234,4 @@ function Stapel(_n: number): void {
         Ablage();
     }
     document.addEventListener('DOMContentLoaded',main);
-  }  
+   }
