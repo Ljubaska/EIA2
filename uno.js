@@ -1,3 +1,10 @@
+Name: Katja Ljubas
+Matrikelnummer: 259521
+Datum: 20.10.2018
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. 
+Er wurde nicht kopiert und auch nicht diktiert.
+
+(In Zusammenarbeit mit Girrbach und Stark) 
 
 (function (uno) {
     let card_0 = {
