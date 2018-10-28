@@ -9,8 +9,8 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 @charset "ISO-8859-1";
 
 #Ablagestapel{
-	background-color: #99A9B6;
-	width:130px;
+	background-color: #cfe8ff;
+	width:100px;
 	height:230px;
 	border:solid thin black;
 	position: absolute;
@@ -20,8 +20,8 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 }
 
 #Nachziehstapel{
-	background-color: #977474;
-	width:130px;
+	background-color: #ffb9bc;
+	width:100px;
 	height:230px;
 	border:solid thin black;
 }
@@ -41,34 +41,34 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 	}
 
 .red{
-	background: red;
-	width: 130px;
+	background: #950004;
+	width: 100px;
 	height: 170px;
 	border:  dotted black;
 	}
 
 .blue{
-	background: blue;
-	width:130px;
+	background: #1b45cc;
+	width:100px;
 	height:170px;
 	border:dotted black;
 }
 
-.green{background: green;
-	width:130px;
+.green{background: #2fa150;
+	width:100px;
 	height:170px;
 	border:dotted black;
 	}
 	
 	
-.yellow{background: yellow;
-	width:130px;
+.yellow{background: #fce06e;
+	width:100px;
 	height:170px;
 	border:dotted black;
 	}
 
 .black{background: black;
-	width:130px;
+	width:100px;
 	height:170px;
 	border:dotted black;
 	color:white;
