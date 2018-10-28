@@ -1,5 +1,11 @@
-
-(function (UnoSpiel) {
+/*Aufgabe 2
+Katja Kristina Ljubas
+Matrikelnummer: 259521
+Datum: 28.10.2018
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+*/
+var Unospiel;
+(function (Unospiel) {
     let colors = ["red", "blue", "green", "yellow"];
     let values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "+2", "X", "<=>"];
     let cards = [{ color: "red", value: "0" }, { color: "blue", value: "0" }, { color: "green", value: "0" }, { color: "yellow", value: "0" }, { color: "black", value: "+4" }, { color: "black", value: "+4" }, { color: "black", value: "+4" }, { color: "black", value: "+4" }, { color: "black", value: "FW" }, { color: "black", value: "FW" }, { color: "black", value: "FW" }, { color: "black", value: "FW" }];
@@ -30,5 +36,5 @@
         }
     }
     document.addEventListener("DOMContentLoaded", Eingabe);
-})(UnoSpiel || (UnoSpiel = {}));
+})(Unospiel || (Unospiel = {}));
 //# sourceMappingURL=uno.js.map

@@ -1,11 +1,10 @@
-/**
-Aufgabe 2
+/*Aufgabe 2
 Katja Kristina Ljubas
 Matrikelnummer: 259521
 Datum: 28.10.2018
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
-**/
-
+*/
+namespace Unospiel {
     interface Unocard {
         color: string;
         value: string;
@@ -47,5 +46,5 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
         
     }
     document.addEventListener("DOMContentLoaded", Eingabe);
-
- }
+ 
+}
