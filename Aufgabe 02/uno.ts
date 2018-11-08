@@ -25,7 +25,7 @@ namespace uno{
                 }
             }
         }
-    console.log(deck);
+  
     
     let handcards:Card[] = [];
     

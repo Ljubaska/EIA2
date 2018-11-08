@@ -17,7 +17,6 @@ var uno;
             }
         }
     }
-    console.log(deck);
     let handcards = [];
     function select() {
         var kartenanzahl = prompt("Gib die Anzahl deiner Handkarten an");
