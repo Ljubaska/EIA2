@@ -29,10 +29,10 @@ var uno;
         }
         for (let b = 0; b < handcards.length; b++) {
             let div = document.createElement("div");
-            document.getElementById("Handkarten").appendChild(div);
             div.innerHTML = handcards[b].value;
             div.classList.add("Handkarten");
             div.classList.add(handcards[b].color);
+            document.getElementById("Handkarten").appendChild(div);
         }
     }
     document.addEventListener("DOMContentLoaded", select);

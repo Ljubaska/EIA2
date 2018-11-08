@@ -44,10 +44,10 @@ namespace uno{
         }
           for (let b: number = 0; b < handcards.length; b++) {
             let div: HTMLElement = document.createElement("div");
-            document.getElementById("Handkarten").appendChild(div);
             div.innerHTML = handcards[b].value;
             div.classList.add("Handkarten");
             div.classList.add(handcards[b].color);
+            document.getElementById("Handkarten").appendChild(div);
             }
     
     
