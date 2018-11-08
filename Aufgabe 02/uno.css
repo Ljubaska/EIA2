@@ -8,7 +8,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 
 @charset "ISO-8859-1";
 
-#Ablagestapel{
+#Ablage{
 	background-color: #cfe8ff;
 	width:100px;
 	height:230px;
@@ -19,7 +19,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 	
 }
 
-#Nachziehstapel{
+#Nachziehen{
 	background-color: #ffb9bc;
 	width:100px;
 	height:230px;
