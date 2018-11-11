@@ -9,33 +9,30 @@ namespace Uno{
     
     document.addEventListener ("keydown", pressKeyboard);
     
-    interface Card {
+    interface playingcard {
         color: string;
         value: string;
         }
     
     let colors: string[] =["red", "blue","green","yellow"]
     let values : string[] = ["1","2","3","4","5","6","7","8","9","X","<=>"]
-    let deck: Card[] =[{color:"red", value:"0"},{color:"blue", value:"0"} , {color:"green", value:"0"} , {color:"yellow", value:"0"} , {color:"black", value:"+4"} , {color:"black", value:"+4"} , {color:"black", value:"+4"} , {color:"black", value:"+4"}, {color:"black", value:"wish"} , {color:"black", value:"wish"} , {color:"black", value:"wish"} , {color:"black", value:"wish"}];
-    let placeToKeep: Card [] = [] ;
+    let deck: playingcard[] =[{color:"red", value:"0"},{color:"blue", value:"0"} , {color:"green", value:"0"} , {color:"yellow", value:"0"} , {color:"black", value:"+4"} , {color:"black", value:"+4"} , {color:"black", value:"+4"} , {color:"black", value:"+4"}, {color:"black", value:"wish"} , {color:"black", value:"wish"} , {color:"black", value:"wish"} , {color:"black", value:"wish"}];
+    let placeToKeep: playingcard [] = [] ;
         
         
     for(let i: number = 0; i<colors.length;i++){
         for(let j : number = 0; j < values.length; j++){
             for(let z: number = 0; z < 2 ; z++){
-                let card: Card ={color: colors[i], value: values[j] };
+                let card: playingcard ={color: colors[i], value: values[j] };
                 deck.push(card);
                 }
             }
         }
   
     
-    let handcards:Card[] = [];
+    let handcards:playingcard[] = [];
     
-     
-     
-    
-    function select(): void {
+        function select(): void {
         var cardnumber: string = prompt("Gib die Anzahl deiner Handkarten an");
         let n: number = parseInt(cardnumber);
         
