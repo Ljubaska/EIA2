@@ -6,8 +6,8 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 */
 namespace Uno{
     
-    
-    document.addEventListener ("keydown", pressKeyboard);
+    document.addEventListener("DOMContentLoaded", Eingabe);
+    document.addEventListener("keydown", pressKeyboard);
     
     interface playingcard {
         color: string;
@@ -30,7 +30,7 @@ namespace Uno{
         }
   
     
-    let handcards:playingcard[] = [];
+    let handcards:playingcard [] = [];
     
         function select(): void {
         var cardnumber: string = prompt("Gib die Anzahl deiner Handkarten an");
@@ -39,7 +39,7 @@ namespace Uno{
         randomCard(n);
         displayHand();
      
-        
+        let button: HTMLElement = document.getElementById("button")
         button.addEventListener("click", sortcards);
 
         let pull: HTMLElement = document.getElementById("deck");
@@ -48,8 +48,8 @@ namespace Uno{
     }
     
     
-        for (let anz: number = _anz; anz > 0; anz--) {
-            let r: number = Math.floor(Math.random() * (deck.length - 1));
+    function randomCard ( _anz: number): void {
+        for ( let anz: number = Math.floor(Math.random() * (deck.length - 1));
             handcards.push(deck[r]);
             deck.splice(r, 1);
         }
