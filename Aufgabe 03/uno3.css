@@ -1,0 +1,88 @@
+/**
+Aufgabe 3
+Katja Kristina Ljubas
+Matrikelnummer: 259521
+Datum: 11.11.2018
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+**/
+
+@charset "ISO-8859-1";
+
+#button{
+	width: 90px;
+	height: 30px;
+	position: absolute;
+	bottom: 100px;
+	right: 20px;
+	text-align: center;
+
+}
+
+
+#stack{
+	background-color: #cfe8ff;
+	width:100px;
+	height:230px;
+	border:solid thin black;
+	position: absolute;
+	right:0px;
+	top:0px;
+	
+}
+
+#deck{
+	background-color: #ffb9bc;
+	width:100px;
+	height:230px;
+	border:solid thin black;
+}
+
+#handcards {
+	width: 90%;
+	border-style: solid;
+	border-width: 1px;
+	height: 200px;
+	bottom: 0px;
+	position: absolute;
+}
+.handcards {
+	display: inline-block;
+	bottom:0px; 
+	margin: 5px;
+	}
+
+.red{
+	background: #950004;
+	width: 100px;
+	height: 170px;
+	border:  dotted black;
+	}
+
+.blue{
+	background: #1b45cc;
+	width:100px;
+	height:170px;
+	border:dotted black;
+}
+
+.green{background: #2fa150;
+	width:100px;
+	height:170px;
+	border:dotted black;
+	}
+	
+	
+.yellow{background: #fce06e;
+	width:100px;
+	height:170px;
+	border:dotted black;
+	}
+
+.black{background: black;
+	width:100px;
+	height:170px;
+	border:dotted black;
+	color:white;
+}
+
+
