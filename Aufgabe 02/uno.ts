@@ -4,7 +4,7 @@ Matrikelnummer: 259521
 Datum: 28.10.2018
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
-namespace uno{
+namespace Uno{
     
     interface Card {
         color: string;
@@ -33,8 +33,8 @@ namespace uno{
      
     
     function select(): void {
-        var kartenanzahl: string = prompt("Gib die Anzahl deiner Handkarten an");
-        let n: number = parseInt(kartenanzahl);
+        var cardnumber: string = prompt("Gib die Anzahl deiner Handkarten an");
+        let n: number = parseInt(cardnumber);
      
   
         for (let anz: number = n; anz > 0; anz--) {
@@ -45,9 +45,9 @@ namespace uno{
           for (let b: number = 0; b < handcards.length; b++) {
             let div: HTMLElement = document.createElement("div");
             div.innerHTML = handcards[b].value;
-            div.classList.add("Handkarten");
+            div.classList.add("Handcards");
             div.classList.add(handcards[b].color);
-            document.getElementById("Handkarten").appendChild(div);
+            document.getElementById("Handcards").appendChild(div);
             }
     
     
