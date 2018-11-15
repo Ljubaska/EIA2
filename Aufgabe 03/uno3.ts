@@ -6,7 +6,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 */
 namespace Uno{
     
-    document.addEventListener("DOMContentLoaded", Eingabe);
+    document.addEventListener("DOMContentLoaded", select);
     document.addEventListener("keydown", pressKeyboard);
     
     interface playingcard {
@@ -49,7 +49,8 @@ namespace Uno{
     
     
     function randomCard ( _anz: number): void {
-        for ( let anz: number = Math.floor(Math.random() * (deck.length - 1));
+        for ( let anz: number =_anz; anz>0; anz--){
+         let r: number= Math.floor(Math.random() * (deck.length - 1));
             handcards.push(deck[r]);
             deck.splice(r, 1);
         }
@@ -101,7 +102,7 @@ namespace Uno{
     function sortcards(): void {
         console.log(handcards);
         document.getElementById("handcards").innerHTML = "";
-        handcards.sort(function(a: Card, b: Card): number {
+        handcards.sort(function(a: playingcard, b: playingcard): number {
             if (a.color > b.color) {
                 return 1;
             }
@@ -124,4 +125,3 @@ namespace Uno{
 
 
   
-       
