@@ -102,7 +102,12 @@ namespace Uno{
     function sortcards(): void {
         console.log(handcards);
         document.getElementById("handcards").innerHTML = "";
-        handcards.sort(function(a: playingcard, b: playingcard): number {
+        handcards.sort(compareCards);
+        console.log(handcards);
+        displayHand();
+    }
+    
+    function compareCards(a: playingcard, b: playingcard): number {
             if (a.color > b.color) {
                 return 1;
             }
@@ -116,11 +121,7 @@ namespace Uno{
                 return -1;
             }
             return 0;
-
-        });
-        console.log(handcards);
-        displayHand();
-    }
+        }
 }
 
 
