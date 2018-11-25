@@ -1,4 +1,5 @@
 
+
 namespace A5v2 {
     // Heterogenes assoziatives Array mit vordefinierten Schluesseln
     export interface Product {
