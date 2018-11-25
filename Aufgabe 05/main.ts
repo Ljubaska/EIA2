@@ -1,5 +1,4 @@
 
-
 namespace A5v2 {
     window.addEventListener("load", init);
 
