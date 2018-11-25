@@ -23,16 +23,16 @@ fieldset > p {
 
 
 h2 {
-	border-left: 3px solid darkred;
+	border-left: 3px solid #6b0001;
 	padding-left: 2px;
 	padding-top: 5px;
-	border-top: 2px dotted darkgrey;
+	border-top: 2px dotted #576e3e;
 	width: 60%;
 }
 
 #priceMain {
 	position: fixed;
-	background-color: orange;
+	background-color: #fc9f9f;
 	padding: 0.5em;
 	border: 2px solid black;
 	right: 20px;
@@ -41,7 +41,7 @@ h2 {
 
 h3 {
 	padding-left: 2px;
-	border-left: 3px solid orange;
+	border-left: 3px solid #fc4c5b;
 }
 
 p {
@@ -62,6 +62,6 @@ p {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	background-color: orange;
+	background-color: #fc899a;
 	color: white;
 }
