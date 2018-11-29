@@ -75,23 +75,24 @@ var Uno;
     function sortcards() {
         console.log(handcards);
         document.getElementById("handcards").innerHTML = "";
-        handcards.sort(function (a, b) {
-            if (a.color > b.color) {
-                return 1;
-            }
-            if (a.color < b.color) {
-                return -1;
-            }
-            if (a.value > b.value) {
-                return 1;
-            }
-            if (a.value < b.value) {
-                return -1;
-            }
-            return 0;
-        });
+        handcards.sort(compareCards);
         console.log(handcards);
         displayHand();
+    }
+    function compareCards(a, b) {
+        if (a.color > b.color) {
+            return 1;
+        }
+        if (a.color < b.color) {
+            return -1;
+        }
+        if (a.value > b.value) {
+            return 1;
+        }
+        if (a.value < b.value) {
+            return -1;
+        }
+        return 0;
     }
 })(Uno || (Uno = {}));
 //# sourceMappingURL=uno3.js.map
