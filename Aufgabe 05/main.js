@@ -10,15 +10,18 @@ var A5v2;
         document.getElementById("check").addEventListener("click", check);
     }
     function displayFieldsets(_item) {
+        let form = document.createElement("form");
+        form.setAttribute("action", "https://ljubaska.herokuapp.com/");
+        form.setAttribute("method", "get");
+        document.getElementsByTagName("body")[0].appendChild(form);
         for (let key in _item) {
-            //console.log(key);
+            console.log(key);
             let value = _item[key];
-            let node = document.getElementsByTagName("body")[0];
             let h2 = document.createElement("h2");
-            node.appendChild(h2);
+            form.appendChild(h2);
             h2.innerText = key;
             let fieldset = document.createElement("fieldset");
-            node.appendChild(fieldset);
+            form.appendChild(fieldset);
             fieldset.setAttribute("name", key);
             fieldset.setAttribute("id", key);
             for (let i = 0; i < value.length; i++) {
