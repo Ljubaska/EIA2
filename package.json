@@ -5,7 +5,7 @@
 	"author" : "Katja",
 	"main" : "server.js",
 	"scripts" : {
-		"start" : "EIA2/Aufgabe 06/server.js"
+		"start" : "nodeEIA2/Aufgabe 06/server.js"
 	},
 	"engines" : {
 		"node" : "8.10.0"
