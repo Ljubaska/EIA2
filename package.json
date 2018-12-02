@@ -2,10 +2,10 @@
 	"name" : "MiniServer",
 	"version" : "1.0.0",
 	"description" : "Minimal server just bouncing the URL",
-	"author" : "Jirka",
-	"main" : "Server.js",
+	"author" : "Katja",
+	"main" : "server.js",
 	"scripts" : {
-		"start" : "node L06_SendData/Server/Server.js"
+		"start" : "EIA2/Aufgabe 06/server.js"
 	},
 	"engines" : {
 		"node" : "8.10.0"
