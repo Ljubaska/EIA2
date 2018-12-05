@@ -2,9 +2,7 @@
 namespace A5v2 {
     window.addEventListener("load", init);
 
-    let treeboolean: boolean = false;
-    let holderboolean: boolean = false;
-    let shipmentboolean: boolean = false;
+
 
     function init(): void {
         displayFieldsets(data);
@@ -106,7 +104,7 @@ namespace A5v2 {
         }
 
         if (target.name == "radioshipment") {
-            shipmentboolean = true;
+            
             for (let i: number = 0; i < data["shipment"].length; i++) {
                 let dom: HTMLElement = document.getElementById("shipment" + i);
                 dom.setAttribute("value", "off");
@@ -158,16 +156,20 @@ namespace A5v2 {
         console.log(gesPrice);
     }
 
+   let treeboolean: boolean = true;
+   let holderboolean: boolean = true;
+   let shippingboolean: boolean = true;
+    
     function check(): void {
         let prompt: string = "Bitte noch auswaehlen:";
-        if (treeboolean == false || holderboolean == false || shipmentboolean == false) {
+        if (treeboolean == false || holderboolean == false || shippingboolean == false) {
             if (treeboolean == false) {
                 prompt += "Baum ";
             }
             if (holderboolean == false) {
                 prompt += "Halter ";
             }
-            if (shipmentboolean == false) {
+            if (shippingboolean == false) {
                 prompt += "Lieferung";
             }
             alert(prompt);
@@ -178,3 +180,4 @@ namespace A5v2 {
 
     }
 }
+

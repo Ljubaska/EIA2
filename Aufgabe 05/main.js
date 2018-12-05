@@ -1,9 +1,6 @@
 var A5v2;
 (function (A5v2) {
     window.addEventListener("load", init);
-    let treeboolean = false;
-    let holderboolean = false;
-    let shipmentboolean = false;
     function init() {
         displayFieldsets(A5v2.data);
         document.getElementsByTagName("body")[0].addEventListener("change", handleChange);
@@ -79,7 +76,6 @@ var A5v2;
             target.setAttribute("value", "on");
         }
         if (target.name == "radioshipment") {
-            shipmentboolean = true;
             for (let i = 0; i < A5v2.data["shipment"].length; i++) {
                 let dom = document.getElementById("shipment" + i);
                 dom.setAttribute("value", "off");
@@ -121,16 +117,19 @@ var A5v2;
         }
         console.log(gesPrice);
     }
+    let treeboolean = true;
+    let holderboolean = true;
+    let shippingboolean = true;
     function check() {
         let prompt = "Bitte noch auswaehlen:";
-        if (treeboolean == false || holderboolean == false || shipmentboolean == false) {
+        if (treeboolean == false || holderboolean == false || shippingboolean == false) {
             if (treeboolean == false) {
                 prompt += "Baum ";
             }
             if (holderboolean == false) {
                 prompt += "Halter ";
             }
-            if (shipmentboolean == false) {
+            if (shippingboolean == false) {
                 prompt += "Lieferung";
             }
             alert(prompt);
