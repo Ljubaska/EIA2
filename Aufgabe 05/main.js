@@ -1,8 +1,8 @@
-var A5v2;
-(function (A5v2) {
+var Konfigurator;
+(function (Konfigurator) {
     window.addEventListener("load", init);
     function init() {
-        displayFieldsets(A5v2.data);
+        displayFieldsets(Konfigurator.data);
         document.getElementsByTagName("body")[0].addEventListener("change", handleChange);
         document.getElementById("check").addEventListener("click", check);
     }
@@ -61,7 +61,7 @@ var A5v2;
         target.setAttribute("value", target.value);
         if (target.name == "radiotree") {
             treeboolean = true;
-            for (let i = 0; i < A5v2.data["tree"].length; i++) {
+            for (let i = 0; i < Konfigurator.data["tree"].length; i++) {
                 let dom = document.getElementById("tree" + i);
                 dom.setAttribute("value", "off");
             }
@@ -69,14 +69,14 @@ var A5v2;
         }
         if (target.name == "radioholder") {
             holderboolean = true;
-            for (let i = 0; i < A5v2.data["holder"].length; i++) {
+            for (let i = 0; i < Konfigurator.data["holder"].length; i++) {
                 let dom = document.getElementById("holder" + i);
                 dom.setAttribute("value", "off");
             }
             target.setAttribute("value", "on");
         }
         if (target.name == "radioshipment") {
-            for (let i = 0; i < A5v2.data["shipment"].length; i++) {
+            for (let i = 0; i < Konfigurator.data["shipment"].length; i++) {
                 let dom = document.getElementById("shipment" + i);
                 dom.setAttribute("value", "off");
             }
@@ -135,5 +135,5 @@ var A5v2;
             alert(prompt);
         }
     }
-})(A5v2 || (A5v2 = {}));
+})(Konfigurator || (Konfigurator = {}));
 //# sourceMappingURL=main.js.map

@@ -1,5 +1,5 @@
 
-namespace A5v2 {
+namespace Konfigurator {
     window.addEventListener("load", init);
 
 

@@ -1,6 +1,6 @@
 
 
-namespace A5v2 {
+namespace Konfigurator {
     // Heterogenes assoziatives Array mit vordefinierten Schluesseln
     export interface Product {
         name: string;

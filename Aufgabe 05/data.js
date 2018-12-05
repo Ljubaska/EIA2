@@ -1,7 +1,7 @@
-var A5v2;
-(function (A5v2) {
+var Konfigurator;
+(function (Konfigurator) {
     // Beispieldaten auf Basis der oben angegebenen Strukturen
-    A5v2.data = {
+    Konfigurator.data = {
         "christmasBalls": [
             { name: "Rot [15Euro]", price: 15 },
             { name: "Gold [22Euro]", price: 22 },
@@ -40,5 +40,5 @@ var A5v2;
             { name: "FedEx [3Euro]", price: 3 }
         ]
     };
-})(A5v2 || (A5v2 = {}));
+})(Konfigurator || (Konfigurator = {}));
 //# sourceMappingURL=data.js.map
