@@ -134,9 +134,6 @@ var A5v2;
             }
             alert(prompt);
         }
-        else {
-            alert("Alles in Ordnung!");
-        }
     }
 })(A5v2 || (A5v2 = {}));
 //# sourceMappingURL=main.js.map

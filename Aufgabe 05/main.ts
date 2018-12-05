@@ -174,9 +174,7 @@ namespace A5v2 {
             }
             alert(prompt);
         }
-        else {
-            alert("Alles in Ordnung!");
-        }
+       
 
     }
 }
