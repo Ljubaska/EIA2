@@ -16,13 +16,16 @@ var L06_SendData;
     }
     function handleRequest(_request, _response) {
         console.log("_request url");
-        // Aufgabe07 
+        _response.setHeader("content-type", "text/html; charset=utf-8");
+        _response.setHeader("Access-Control-Allow-Origin", "*");
+        console.log(_request.url);
+        //Aufgabe 7
         let url = Url.parse(_request.url, true).query;
         console.log(url);
         for (let key in url) {
             console.log(url[key]);
             console.log(key);
-            _response.write(key + "=" + url[key] + "<br>");
+            _response.write(key + " = " + url[key] + "<br>");
         }
         _response.end();
     }
