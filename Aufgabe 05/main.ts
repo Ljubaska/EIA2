@@ -6,7 +6,7 @@ namespace Konfigurator {
 
     function init(): void {
         displayFieldsets(data);
-        document.getElementsByTagName("body")[0].addEventListener("change", handleChange);
+        document.getElementById("fieldsets").addEventListener("change", handleChange);
         document.getElementById("check").addEventListener("click", check);
     }
 
@@ -18,13 +18,11 @@ namespace Konfigurator {
       
 
         
-        let form: HTMLElement = document.createElement("form");
-        form.setAttribute("action", "https://ljubaska.herokuapp.com/");
-        form.setAttribute("method", "get");
-        document.getElementsByTagName("body")[0].appendChild(form);
+      
         for (let key in _item) {
             console.log(key);
             let value: Product[] = _item[key];
+            let form: Element = document.getElementById("fieldsets")
             let h2: HTMLElement = document.createElement("h2");
             form.appendChild(h2);
             h2.innerText = key;

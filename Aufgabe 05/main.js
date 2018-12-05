@@ -3,17 +3,14 @@ var Konfigurator;
     window.addEventListener("load", init);
     function init() {
         displayFieldsets(Konfigurator.data);
-        document.getElementsByTagName("body")[0].addEventListener("change", handleChange);
+        document.getElementById("fieldsets").addEventListener("change", handleChange);
         document.getElementById("check").addEventListener("click", check);
     }
     function displayFieldsets(_item) {
-        let form = document.createElement("form");
-        form.setAttribute("action", "https://ljubaska.herokuapp.com/");
-        form.setAttribute("method", "get");
-        document.getElementsByTagName("body")[0].appendChild(form);
         for (let key in _item) {
             console.log(key);
             let value = _item[key];
+            let form = document.getElementById("fieldsets");
             let h2 = document.createElement("h2");
             form.appendChild(h2);
             h2.innerText = key;
