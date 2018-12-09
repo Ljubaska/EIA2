@@ -2,6 +2,7 @@
     Name: Verena Girrbach
     Matrikel: 
     Datum: 09.12.18
+    
     Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
     Dieser Code wurde in Zusammenarbeit mit Verena Girrbach erstellt.   
 */
