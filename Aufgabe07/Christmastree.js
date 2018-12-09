@@ -1,6 +1,6 @@
-/*Aufgabe: Aufgabe 5: Weihnachtsbaumkonfigurator
-    Name: Verena Girrbach
-    Matrikel:
+/*Aufgabe: Aufgabe 7: Weihnachtsbaumkonfigurator
+    Name: Katja Kristina Ljubas
+    
     Datum: 09.12.18
     
     Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
