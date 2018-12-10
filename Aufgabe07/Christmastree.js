@@ -141,7 +141,7 @@ var Christmastree3;
     }
     function sendRequestWithCustomData(_e) {
         let xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://girrbacv.herokuapp.com" + "/?" + urlToSend, true);
+        xhr.open("GET", "https://ljubaska.herokuapp.com" + "/?" + urlToSend, true);
         xhr.addEventListener("readystatechange", handleStateChange);
         xhr.send();
     }

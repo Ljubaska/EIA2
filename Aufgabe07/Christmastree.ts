@@ -185,7 +185,7 @@ namespace Christmastree3 {
     
     function sendRequestWithCustomData(_e: MouseEvent): void {
         let xhr: XMLHttpRequest = new XMLHttpRequest();
-        xhr.open("GET", "https://girrbacv.herokuapp.com" + "/?" + urlToSend, true);
+        xhr.open("GET", "https://ljubaska.herokuapp.com" + "/?" + urlToSend, true);
         xhr.addEventListener("readystatechange", handleStateChange);
         xhr.send();
     }
