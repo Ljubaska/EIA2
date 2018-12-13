@@ -5,8 +5,10 @@
 
 head {
 	display: none;
+	color: #fb95e5;
 }
 
 fieldset {
 	width: 300px;
+	color: #b9aafb;
 }
