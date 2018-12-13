@@ -13,7 +13,7 @@ let students;
 if (process.env.NODE_ENV == "production") {
     databaseURL = "mongodb://ljubaska:07.01.Kk@ds237868.mlab.com:37868/ljubaska";
     // databaseURL = "mongodb://testuser:testpassword@ds129532.mlab.com:29532/eia2";
-    databaseName = "eia2";
+    databaseName = "ljubaska";
 }
 // try to connect to database, then activate callback "handleConnect" 
 Mongo.MongoClient.connect(databaseURL, handleConnect);
