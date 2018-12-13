@@ -45,7 +45,7 @@ function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerRes
             break;
         case "find": 
             let matrikel: MatrikelData= {
-                matrikel: parseInt(query["find"])
+                matrikel: parseInt(query["matrikel"])
             };
             Database.find(matrikel, findCallback);
             break;
