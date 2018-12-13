@@ -1,7 +1,7 @@
 "use strict";
 /**
  * Simple database insertion and query for MongoDB
- * @author: Jirka Dell'Oro-Friedl
+ * @author: Katja Kristina Ljubas
  */
 const Mongo = require("mongodb");
 console.log("Database starting");
@@ -11,8 +11,8 @@ let db;
 let students;
 // running on heroku?
 if (process.env.NODE_ENV == "production") {
-    //    databaseURL = "mongodb://username:password@hostname:port/database";
-    databaseURL = "mongodb://testuser:testpassword@ds129532.mlab.com:29532/eia2";
+    databaseURL = "mongodb://ljubaska:07.01.Kk@ds237868.mlab.com:37868/ljubaska";
+    // databaseURL = "mongodb://testuser:testpassword@ds129532.mlab.com:29532/eia2";
     databaseName = "eia2";
 }
 // try to connect to database, then activate callback "handleConnect" 
