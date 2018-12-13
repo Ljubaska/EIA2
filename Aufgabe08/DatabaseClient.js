@@ -7,6 +7,7 @@ var DatabaseClient;
         console.log("Init");
         let insertButton = document.getElementById("insert");
         let refreshButton = document.getElementById("refresh");
+        let findButton = document.getElementById("find");
         insertButton.addEventListener("click", insert);
         refreshButton.addEventListener("click", refresh);
     }
@@ -21,6 +22,13 @@ var DatabaseClient;
     }
     function refresh(_event) {
         let query = "command=refresh";
+        sendRequest(query, handleFindResponse);
+    }
+    function find(_event) {
+        let search = document.getElementById("Suche");
+        let query = "command=find";
+        query += "&matrikel=" + search.value;
+        console.log(query);
         sendRequest(query, handleFindResponse);
     }
     function sendRequest(_query, _callback) {
