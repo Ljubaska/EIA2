@@ -102,8 +102,8 @@ namespace Canvas {
         crc2.moveTo(499, 295);
         crc2.lineTo(495, 267);
         crc2.closePath();
-        crc2.fillStyle = "#000000";
-        crc2.strokeStyle = "#000000";
+        crc2.fillStyle = "white";
+        crc2.strokeStyle = "orange";
         crc2.stroke();
         crc2.fill();
     }
@@ -137,8 +137,8 @@ namespace Canvas {
         crc2.moveTo(300, 395);
         crc2.lineTo(290, 400);
         crc2.closePath();
-        crc2.fillStyle = "#000000";
-        crc2.strokeStyle = "#000000";
+        crc2.fillStyle = "white";
+        crc2.strokeStyle = "purple";
         crc2.stroke();
         crc2.fill();
     }
