@@ -5,6 +5,7 @@ namespace Aufgabe10 {
         y: number;
         dy: number;
         color: string;
+        
 
         move(): void {
 
